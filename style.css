@@ -2,3 +2,16 @@
     margin: 0px;
     padding: 0px;
 }
+
+.div {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.divChild {
+    border: solid black 1px;
+    height: 30px;
+    width: 30px;
+
+}
