@@ -1,17 +1,12 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-.div {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
 .divChild {
-    border: solid black 1px;
+    border: 1px solid olivedrab;
+    height: 30px;
+    padding: 0px;
+    display: flex;
+}
+
+.columnDivs {
+    border: 1px solid black;
     height: 30px;
     width: 30px;
-
 }
