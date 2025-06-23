@@ -1,12 +1,20 @@
-.divChild {
-    border: 1px solid olivedrab;
-    height: 30px;
-    padding: 0px;
-    display: flex;
+* {
+    box-sizing: border-box;
 }
 
-.columnDivs {
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container>div {
     border: 1px solid black;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
+}
+
+#container>div:nth-child(17n + 1) {
+    width: 100%;
+    border: 0;
+    height: 0;
 }

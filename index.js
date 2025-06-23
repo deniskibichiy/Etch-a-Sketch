@@ -1,18 +1,14 @@
-const div = document.querySelector("#container");
-div.classList.add('div');
+const container_div = document.querySelector("#container");
 
-let divsNum = 16;
-let i;
+let divsNum = 257;
 
+function createSquareDivs () {
+    for (let i = 0; i < 273; i++ ) {
+        const columnsDivs = document.createElement('div');
+        columnsDivs.classList.add("square_div");
+        container_div.appendChild(columnsDivs);
+    }
+    
+}
 
-// let the number of rows be 16
-//append the columns to each row
-//append each row to the parent container
-for (i = 0; i <= divsNum; i++) {
-    const divChild = document.createElement("div");
-    divChild.classList.add("divChild");
-    div.appendChild(divChild);
-    const columnDivs = document.createElement('div');
-    columnDivs.classList.add("columnDivs");
-    divChild.appendChild(columnDivs);
-};
+createSquareDivs();
