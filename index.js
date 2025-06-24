@@ -1,7 +1,9 @@
 
+
+const container_div = document.querySelector('.container');
 function createSquareDivs (numberPerRow) {
 
-    const container_div = document.querySelector('.container');
+    
     const total = (numberPerRow * numberPerRow) + numberPerRow;
     const mod = numberPerRow + 1;
     container_div.style.cssText ="width: 500px; height: 500px"
@@ -22,4 +24,19 @@ function createSquareDivs (numberPerRow) {
     }
 }
 
-createSquareDivs(30);
+let numberOfDivs;
+createSquareDivs(numberOfDivs);
+const button = document.querySelector('button');
+button.onclick = function () {
+numberOfDivs = Number(prompt("Enter the number of squares per side."));
+container_div.textContent ='';
+createSquareDivs(numberOfDivs);
+}
+
+//console.log(numberOfDivs)
+console.log(numberOfDivs);
+
+//An event listener to listen to hover events - needed for coloring the divs on hover
+
+
+
