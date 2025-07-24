@@ -21,3 +21,9 @@ A pretty neat toy to flex my DOM Manipulation skills.
     ## Using a JS Variable with units as a value in CSS styling
 
     * The other bit of pain in this project involved making using of JS math logic to create a value and pass it into a CSS declaration as a value. Why this was painful is that I needed a fixed container which had to accomodate all the divs while maintaining the dimensions. For this, I created two different values: one holding the numeric value and the other holding the value "px" which is a string. While passing the values into CSS, I used string concatenation which provides a way of combining the two into a single value block, e.g when the width value was 900/45 and the unit is px, concatinating led to the width and height of the square div being set to 900/45 px. This allowed me to allocate the width and height size to the square divs based on the user input which would evidently keep on changing. KUDOS!
+
+## Challenges to solve:
+
+* I attempted to pass the number obtained from the prompting the user as a parameter but then trying to console.log the value returned the error: undefined value. To bypass this I had to call the function to create the square divs inside the same function that prompted the user for the number of divs per side. I however think this is a terrible idea and there must be a better way. This also means that the square divs disappear whenever the page is refreshed. Terrible idea. 
+
+* The square divs are created inside a function but then I need to access the column divs in order to add an hover event listener but this ended up terribly. Trying to create them outside the function scope means that I don't get the opportunity to create the divs based on the iterations hence no equal number of square divs
