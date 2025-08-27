@@ -21,6 +21,6 @@
 
 .color {
     
-    background-color: aqua;
+    background-color: #ff0000;
     transform: rotateX('180');
 }
