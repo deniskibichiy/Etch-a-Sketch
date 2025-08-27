@@ -1,10 +1,11 @@
 # Etch-a-Sketch
 A pretty neat toy to flex my DOM Manipulation skills.
-
+## Lide demo
+[Live Here](https://deniskibichiy.github.io/Etch-a-Sketch/)
 # Program development life cyle
 1. Understand the problem
 * The problem: 
-    1. Creating a web page with 16 * 16 grid of square divs
+    1. Creating a web page with 16 * 16 grid of square divs - Later on changed this to allow the user input their desired number of divs. 
     2. The divs are to be created using JavaScript
     3. Make use of flexbox to layout the divs as a grid.
     4. Set up an hover effect so that the grid divs change color when the mouse passes over them, leaving a trail through the grid
